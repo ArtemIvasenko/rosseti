@@ -1,0 +1,46 @@
+.workspace{
+
+    height: 500px;
+    width: 100%;
+}
+
+.list{
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    overflow: auto;
+    border: 2px solid black;
+}
+
+.desk{
+    height: 500px;
+    border: 3px solid black;
+    
+}
+
+.elem{
+    margin-top: 3px;
+    border-top: 2px solid rgba(57, 126, 255, 0.788);
+    border-bottom: 2px solid  rgba(57, 126, 255, 0.788);
+    vertical-align:middle;
+}
+
+.elem:hover{
+    background: rgb(76,67,226);
+    background: linear-gradient(90deg, rgba(76,67,226,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+.elemtitle{
+    margin: 10px auto;
+    float: left;
+    font-size: 24px;
+}
+
+.ip{
+    margin: 20px auto;
+    font-size: 50px;
+}
+
+.form{
+    display: none;
+}

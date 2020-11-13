@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Цифровая хрень</title>
+</head>
+<body>
+	<script src="object.js"></script>
+	<div class="list">
+		Список <br>	
+		<button onclick="addAED();">
+			Добавить устройство 
+		</button>
+	</div>
+	<div class="board">
+		Рабочая зона
+	</div>
+	<div class="col-md-12 form">
+		<form action="POST">
+			<input type="text" name="ip" id="ip">
+			<input type="text" name="mask" id="mask">
+			<input type="text" name="gcb" id="gcb">
+			<input type="text" name="mac" id="mac">
+			<input type="text" name="appId" id="appId">
+			<input type="text" name="vlanId" id="vlanId">
+			<input type="text" name="minTime" id="minTime">
+			<input type="text" name="maxTime" id="maxTime">
+		</form>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"
+  integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="
+  crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
