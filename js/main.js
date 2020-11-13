@@ -29,7 +29,7 @@ function addIED(){
 	let divMaxTime = '<div class="maxTime" style="margin: 5px 50px;">'+arr[i].maxTime+'</div>';
 	let button = '<button class="button'+i+'" name="button" id="'+arr[i].id+'" onClick="show()" style="margin: 20px 50px;">Настройки</button>';
 
-	$('.board').append('<div class="ied" style="margin: 50px 150px;"><p class="blocktitle" style="margin-left: 5px; color: white;">IED1</p><p class="tr" style="float: right; color: white;">IED1</p><p class="tl" style="margin-top: 80px;">ip:</p><p class="tl">маска:</p><button class="blockbutton">Настройки</button></div>');
+	$('.board').append('<div class="ied" style="right: auto; bottom: auto; left: 607px; top: 444px;"><p class="blocktitle" style="margin-left: 5px; color: white;">IED1</p><p class="tr" style="float: right; color: white;">IED1</p><p class="tl" style="margin-top: 80px;">ip:</p><p class="tl">маска:</p><button class="blockbutton">Настройки</button></div>');
 	$(".ied").draggable({ containment:".board", scroll:false, stack: ".draggable"});
 
 
