@@ -28,9 +28,10 @@ ul{
     background-image: url(src/bg.png);
     background-size: contain;
     width: 100%;
-    min-height: 900px;
     overflow: hidden;
 	position: relative;
+    max-height: 100vh;
+    height: 100vh;
 }
 
 .ied{
@@ -39,6 +40,76 @@ ul{
     width: 172.2px;
     height: 230px;
     position: absolute;
+    z-index: 999;
+}
+
+.ied .link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0065b3;
+    position: absolute;
+    right: -15px;
+    top: 37px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ied .link:hover {
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: 32px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #17b792;
+}
+
+.ied .link.active {
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: 32px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #17b792;
+}
+
+.commute .links {
+    position: absolute;
+    top: 48px;
+}
+
+.commute .link {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0065b3;
+    transition: 0.2s;
+    margin-bottom: 19px;
+    margin-left: -15px;
+
+}
+
+
+.commute .link:hover {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    background-color: #17b792;
+    margin-bottom: 13.5px;
+    margin-top: -5px;
+    margin-left: -20px;
+}
+
+.commute .link.active {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    background-color: #17b792;
+    margin-bottom: 13.5px;
+    margin-top: -5px;
+    margin-left: -20px;
 }
 
 .blockbutton{
@@ -59,7 +130,8 @@ ul{
 }
 
 .tr{
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-top: 1px;
 }
 
 .commute{
@@ -70,12 +142,17 @@ ul{
     width: 210px;
     /*display: none;*/
     padding-bottom: 10px;
+    position: absolute;
+    right: 150px;
+    top: 200px;
+    z-index: 999;
+
 }
 
 .port{
     color: white;
     margin-top: 25px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .bt{
@@ -167,3 +244,90 @@ ul{
 .сommute-settings .b-popup-content {
     width: 800px;
 } 
+
+.link.active {
+    animation: pulsation 2s infinite ease-in-out;
+}
+
+@keyframes pulsation {
+    from {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+        background-color: #1eefbf;
+
+    }
+
+    50% {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        right: -15px;
+        background-color: #0065b3;
+        opacity: .7;
+    }
+
+    to {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+        background-color: #1eefbf;
+    }
+
+}
+
+.commute .link.active {
+    animation: pulsation2 2s infinite ease-in-out;
+
+}
+
+@keyframes pulsation2 {
+    from {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1eefbf;
+        margin-bottom: 14px;
+        margin-left: -20px;
+        margin-top: -5px;
+
+    }
+
+    50% {
+        margin-top: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #0065b3; 
+        transition: 0.2s;
+        margin-bottom: 19px;
+        margin-left: -15px;
+    }
+
+    to {
+        margin-top: -5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #1eefbf;
+        margin-bottom: 14px;
+        margin-left: -20px;
+    }
+
+}
+
+.line {
+    margin-top: -45px !important;
+    z-index: 10;
+}
+
+.drag .delete{
+    margin-top: -38px;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+    background-image: url(src/close.png);
+    background-size: contain;
+    float: right;
+    color: white;
+}
